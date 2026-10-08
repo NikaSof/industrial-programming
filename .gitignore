@@ -4,10 +4,6 @@ report/
 # Результаты сборки
 *.exe
 
-# Локальные скрипты подготовки отчёта
-/build_report.py
-/update_report_section*.py
-
 # Временные файлы
 ~$*
 *.tmp
