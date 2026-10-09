@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ПЗ2: запуск",
+      "type": "shell",
+      "command": "go",
+      "args": ["run", "./cmd/myapp"],
+      "options": {
+        "cwd": "${workspaceFolder}/practice-02"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "ПЗ2: сборка",
+      "type": "shell",
+      "command": "go",
+      "args": ["build", "-o", "bin/myapp.exe", "./cmd/myapp"],
+      "options": {
+        "cwd": "${workspaceFolder}/practice-02"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
