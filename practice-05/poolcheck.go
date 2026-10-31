@@ -8,7 +8,6 @@ import (
 	"time"
 )
 
-// Synthetic waiting workload; this is not a CRUD throughput benchmark.
 func checkPool(db *sql.DB) error {
 	for _, limit := range []int{1, 5, 10} {
 		db.SetMaxIdleConns(0)
