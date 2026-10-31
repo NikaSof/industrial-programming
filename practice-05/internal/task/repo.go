@@ -76,7 +76,6 @@ func (r *Repo) Update(id int64, title string, done bool) (Task, error) {
 	task.Done = done
 	task.UpdatedAt = time.Now().UTC()
 
-	// Из map получена копия: сохраняем изменённое значение обратно.
 	r.items[id] = task
 
 	return task, nil
